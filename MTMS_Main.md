@@ -60,7 +60,7 @@ While most of the time you are not going to go lower than flakes, specs and tiny
 The names of materials shall use either IUPAC's naming convention, or any commonly used name for the compound in question. If neither exists, it is permissible to create your own name. If possible, it should resemble IUPAC convention as closely as possible. **Examples:**
 - `Dihydrogen Monoxide` → `Water`
 - `1 to 16 Diluted Acetic Acid` → `Vinegar`
-- `7 Nitric Acid to 1 Nitrogen Dioxide Mixture` → `Red Fuming Nitric Acid`
+- `7 Nitric Acid to 1 Dinitrogen Tetroxide Mixture` → `Red Fuming Nitric Acid`
 
 <br/><br/>
 ## **5** - Solutions and other compound mixtures: ##
