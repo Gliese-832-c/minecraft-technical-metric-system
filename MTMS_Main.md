@@ -1,36 +1,32 @@
 ### Gliese 832 c's Minecraft Technical Metric System ###
 A standard aiming at making modded Minecraft processing chains, in particularly - but not limited to - tech mods/modpacks far more realistic and consistent. Version 1.0.0.
 
-
-
+<br/><br/><br/><br/><br/>
 ![gliese_minecrafttechnicalmetricsystem](https://user-images.githubusercontent.com/55159077/167258398-5b4543ff-1e74-47ee-9a91-93b5f6d2cca8.png)
 # **The dark ages of modded Minecraft are about to end. The revolution is coming very soon.** #
 
+<br/>
 
-
-Term definitions:
+### Term definitions: ###
 - **Material**: Anything that is somehow used or created in processing. For example: Items, Blocks, Fluids.
 - **Project**: Mods, modpacks, and anything similar that can use __MTMS__ for its processing chains and the like.
 
+<br/>
 
-
+### Description: ###
 Named after how in the 18th century the metric system aimed to reduce confusion and unify the scattered and inconsistent measurement systems present at the time, __Gliese 832 c's Minecraft Technical Metric System__, also abbreviated as __Gliese's MTMS__ or simply just __MTMS__, is a system/standard designed to unify all kinds of processing chains in modded Minecraft, particulary in, but not limited to, tech projects.
 
 Oftentimes amounts of things like chemicals and metals are all over the place, and it's very hard to design realistic chemical processing chains based off of real values. This system aims to do away with things like different materials of the same type (like liquid) having different amounts. (Such as gems being 666mB and metals 144mb.) Not only will it highly increase the realism and internal consistency of your project, since it's actually grounded in reality through the use of the unit mol, you could - if you wanted to put that much effort into your project - calculate realistic values like the RF/GTEU to Joule convertion ratio, which would further allow you to design even more realistic processes, power storage, fuel values, etc.
 
-
-
-
-
+<br/><br/><br/><br/>
 ## **1** - Amount based in-game amounts: ##
 All amounts are relative to the count of a particles in a material (commonly known as mol). For example, 1000mB of hydrogen gas and 1000mB of oxygen gas represent the same amount of molecules of these two materials. Volume and weight, as well as thermal expansion are ignored for the sake of simplicity as it would turn everything into a mess.
 
-
-
-
-
+<br/><br/>
 ## **2** - Materials follow the following ratios: ##
-**100 Mol __(IRL)__** : **100 Liquid** : **1600 Gas** : **1 Item** : **400 Compressed Gas** : **100 Very Compressed Gas** : **100 Supercritical Fluid** : **50 Supercompressed Supercritical Fluid** : **25 Hypercompressed Supercritical Fluid**
+**100 Mol __(IRL)__** :
+**100 Liquid** : **1600 Gas** : **1 Item** : **400 Compressed Gas** :
+**100 Very Compressed Gas** : **100 Supercritical Fluid** : **50 Supercompressed Supercritical Fluid** : **25 Hypercompressed Supercritical Fluid**
 (The last two will rarely be encountered, but are still listed for completeness' sake.)
 
 **For example:** Let's try to represent the following chemical equation: `HCl + H₂O → H₃0⁺•Cl⁻` Hydrogen chloride is a gas, whereas water is a liquid. Using the ratios above, the recipe would look like this in-game: `16mB Hydrogen Chloride + 1mB Water → 1mB Hydrochloric Acid`. Since `H₃0⁺•Cl⁻` is one seen as one single "unit"/molecule, it's represented as 1mB, *not* 2mB.
@@ -41,10 +37,7 @@ Since those values are undesirably low for gameplay, you may, of course, use big
 
 Lastly, let's use some of the less common material types and unconventional materials in **an example**: `4Fe + 3O₂ → 2Fe₂O₃` Assuming that air is exactly 1/5 oxygen, we could have a recipe like this: `2 Iron Dust + 3000mB Compressed Air → 1 Iron Oxide + 9600mB Deoxygenated Air` This recipe is trickier, as we have to do more math to reach a result. Since the ratio between an item and a compressed gas is 1:400 and we have 2 items, that gives us 800mB. However, you only need 3 oxygen for every iron as seen in the chemical equation above, so dividing that by 4/3 gives us 600mB of compressed oxygen that we would need. In addition to that, since this recipe actually uses compressed air which we assumed to be 1/5 oxygen, we need to multiply the amount of compressed oxygen by a value of 5, giving us 3000mB of compressed air that you need to react with 2 iron to get 1 iron oxide. Since we only actually used the 600mB of oxygen in the air, we would have 2400mB remaining. But if we say that the air decompressed, we have to adjust for that. Since the ratio of compressed gas to gas is 1:4, we simply multiply that number by 4.
 
-
-
-
-
+<br/><br/>
 ## **3** - Item material splitting: ##
 Sometimes you might want to use only tiny amounts of materials. While you can just use low amounts of millibuckets with fluids, that is not possible with items. So the following system has been devised for splitting items:
 
@@ -60,10 +53,7 @@ While most of the time you are not going to go lower than flakes, specs and tiny
 
 *Note: I am aware that this makes the manual crafting of nuggets into ingots, ingots into blocks, etc. impossible. This is completely intended design as __MTMS__ is aiming to allow strong realism while maintaining high levels of internal consistency, the best results of which are achieved with ratios such as above, and it's not very realistic to just stick chunks of things like metal together to make bigger ones anyways. The intended path of action is for project authors to add recipes to various metal melting and casting machines to turn the smaller units into the bigger ones. If you do not like this system, feel free to create your own "fork" of __MTMS__ to deal with such things. I recommend going with a value that is far better to do math with in a decimal system instead of the default 9. The only good ones that fit into the 3x3 crafting grid are 5 and 4. Alternatively, perhaps add/use a mod that adds a 5x5 crafting table.*
 
-
-
-
-
+<br/><br/>
 ## **4** - Solutions and other compound mixtures: ##
 To avoid a messy system of solubility, solutions are always treated as one part solute and one part solvent.
 **For example:** `1 Sodium Chloride Dust + 100mB Water → 100mB Sodium Chloride Solution`
@@ -71,10 +61,7 @@ To avoid a messy system of solubility, solutions are always treated as one part 
 For other compound mixtures, where the individual parts of the compounds *do not connect on a molecular/atomic level*, it is added instead, as realistically mixing two immisible substances would actually increase the volume of the total output product:
 **Example:** `1 Iron Oxide Dust + 100mB Water → 200mB Iron Oxide Suspension` 
 
-
-
-
-
+<br/><br/>
 ## **5** - Name standardization: ##
 
 #### 5.A - Solutions: ####
@@ -82,8 +69,7 @@ Solutions follow the format of `x z Solution(y)`, where x is the name of the sol
 Examples: `Sodium Chloride Solution`     |     `Iodine Solution(Carbon Tetrachloride)`     |     `Germanium Solid Solution(Silicon)`
 *Note: In real life, both solid and gaseous solutions are not called that way and instead have different names. This name convention is only supposed to be used when another name for a solid or gaseous solution does not exist. In fact, these cases are so rare that I had trouble finding one for an example, so I used something that's actually usually known as Silicon-Germanium Alloy.*
 
-There is one exception to the above and that is if the solution is an acid. In that case, the name of the acid is used.
-**Examples:**
+There is one exception to the above and that is if the solution is an acid. In that case, the name of the acid is used. **Examples:**
 - `Propanoic Acid`
 - `Perchloric Acid`
 - `Nitrous Acid`
