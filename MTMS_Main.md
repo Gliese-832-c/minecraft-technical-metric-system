@@ -4,7 +4,7 @@ A standard aiming at making modded Minecraft processing chains, in particularly 
 If you use this in your project, I would really appreciate it if you could link back to this exact page on your own main page or in any scripts or code classes that handle recipes using this system. While that is not required, it would greatly help the spread of this system.
 
 <br/><br/><br/><br/><br/>
-![gliese_minecrafttechnicalmetricsystem_v1 1 0](https://user-images.githubusercontent.com/55159077/167262669-04d1b82b-7603-4be9-9505-dc678b68952e.png)
+![gliese_minecrafttechnicalmetricsystem_v1 2 0](https://user-images.githubusercontent.com/55159077/167264687-0a35853f-3e7c-4bbb-9044-6811ecd891c7.png)
 # **The dark ages of modded Minecraft are about to end. The revolution is coming very soon.** #
 
 <br/>
@@ -32,7 +32,7 @@ All amounts are relative to the count of a particles in a material (commonly kno
 (The last two will rarely be encountered, but are still listed for completeness' sake.)
 *Note: 1000 mols was chosen as the number to represent 1 item, as it feels like a good value to emulate real life materials. For example, 1000 mols of iron would be 55.845kg, which seems like a decent value to represent one ingot. That much iron would be 7.092 liters.*
 
-**For example:** Let's try to represent the following chemical equation: `HCl + H₂O → H₃0⁺•Cl⁻` Hydrogen chloride is a gas, whereas water is a liquid. Using the ratios above, the recipe would look like this in-game: `0.16mB Hydrogen Chloride + 0.1mB Water → 0.1mB Hydrochloric Acid`. Since `H₃0⁺•Cl⁻` is one seen as one single "unit"/molecule, it's represented as 0.1mB, *not* 0.2mB. More on that in paragraph **4**.
+**For example:** Let's try to represent the following chemical equation: `HCl + H₂O → H₃0⁺•Cl⁻` Hydrogen chloride is a gas, whereas water is a liquid. Using the ratios above, the recipe would look like this in-game: `0.16mB Hydrogen Chloride + 0.1mB Water → 0.1mB Hydrochloric Acid`. Since `H₃0⁺•Cl⁻` is one seen as one single "unit"/molecule, it's represented as 0.1mB, *not* 0.2mB. More on that in paragraph **5**.
 
 Since those values are impossibly low, you may, of course, use bigger batches of material to represent recipes. `1600mB Hydrogen Chloride + 100mB Water → 100mB Hydrochloric Acid` is a completely valid recipe, representing the reaction of 1000 mols of water and 1000 mols of hydrogen chloride into 1000 mols of hydrochloric acid IRL, that could exist in a machine such as a chemical reactor.
 
@@ -56,8 +56,14 @@ While most of the time you are not going to go lower than flakes, specs and tiny
 
 *Note: I am aware that this makes the manual crafting of nuggets into ingots, ingots into blocks, etc. impossible. This is completely intended design as __MTMS__ is aiming to allow strong realism while maintaining high levels of internal consistency, the best results of which are achieved with ratios such as above, and it's not very realistic to just stick chunks of things like metal together to make bigger ones anyways. The intended path of action is for project authors to add recipes to various metal melting and casting machines to turn the smaller units into the bigger ones. If you do not like this system, feel free to create your own "fork" of __MTMS__ to deal with such things. I recommend going with a value that is far better to do math with in a decimal system instead of the default 9. The only good ones that fit into the 3x3 crafting grid are 5 and 4. Alternatively, perhaps add/use a mod that adds a 5x5 crafting table.*
 
+## **4** - Naming: ##
+The names of materials shall use either IUPAC's naming convention, or any commonly used name for the compound in question. If neither exists, it is permissible to create your own name. If possible, it should follow IUPAC convention as closely as possible. **Examples:**
+- `Dihydrogen Monoxide` → `Water`
+- `1 to 16 Diluted Acetic Acid` → `Vinegar`
+- `7 Nitric Acid to 1 Nitrogen Dioxide Mixture` → `Red Fuming Nitric Acid`
+
 <br/><br/>
-## **4** - Solutions and other compound mixtures: ##
+## **5** - Solutions and other compound mixtures: ##
 To avoid a messy system of solubility, solutions are always treated as one part solute and one part solvent.
 **For example:** `1 Sodium Chloride Dust + 100mB Water → 100mB Sodium Chloride Solution`
 
@@ -65,11 +71,13 @@ For other compound mixtures, where the individual parts of the compounds *do not
 **Example:** `1 Iron Oxide Dust + 100mB Water → 200mB Iron Oxide Suspension` 
 
 <br/><br/>
-## **5** - Name standardization: ##
+## **6** - Name standardization: ##
 
-#### 5.A - Solutions: ####
-Solutions follow the format of `x z Solution(y)`, where x is the name of the solute, y is the name of the solvent, and z is the state of matter of the solution. When the solvent is water, `(y)`may be omitted. When the state of matter of the solution is liquid, `z ` may be omitted.
-Examples: `Sodium Chloride Solution`     |     `Iodine Solution(Carbon Tetrachloride)`     |     `Germanium Solid Solution(Silicon)`
+#### 6.A - Solutions: ####
+Solutions follow the format of `x z Solution(y)`, where x is the name of the solute, y is the name of the solvent, and z is the state of matter of the solution. When the solvent is water, `(y)`may be omitted. When the state of matter of the solution is liquid, `z ` may be omitted. **Examples:**
+- `Sodium Chloride Solution`
+- `Iodine Solution(Carbon Tetrachloride)`
+- `Germanium Solid Solution(Silicon)`
 *Note: In real life, both solid and gaseous solutions are not called that way and instead have different names. This name convention is only supposed to be used when another name for a solid or gaseous solution does not exist. In fact, these cases are so rare that I had trouble finding one for an example, so I used something that's actually usually known as Silicon-Germanium Alloy.*
 
 There is one exception to the above and that is if the solution is an acid. In that case, the name of the acid is used. **Examples:**
@@ -79,8 +87,8 @@ There is one exception to the above and that is if the solution is an acid. In t
 
 <br/>
 
-#### 5.B - Diluted and Concentrated Solutions: ####
-Sometimes you want to use more diluted or concentrated solutions such as diluted acids for certain processes. In the following table, `x` is the name of the 1:1 solution as described in **5.A** and the value at the left side of the table is the solute to solvent ratio:
+#### 6.B - Diluted and Concentrated Solutions: ####
+Sometimes you want to use more diluted or concentrated solutions such as diluted acids for certain processes. In the following table, `x` is the name of the 1:1 solution as described in **6.A** and the value at the left side of the table is the solute to solvent ratio:
 
 Ratio | Name
 ----- | ---------------------
@@ -104,15 +112,15 @@ Ratio | Name
 While it does not have to be called that way directly, if referring to solutions with 1:1 ratios in descriptions and tutorials and such, the word undiluted may be used.
 
 For all other dilution levels, you may use either of the following systems:
-##### 5.B.I - Ratios: #####
-If the solute to solvent ratio is lower than 1, use `x to y Diluted z`. If it's higher than one, use `x to y Concentrated z`. In both cases, `x` and `y` are the ratio of solute to solvent, `z` the name of the 1:1 solution as described in **5.A**. If the solvent is water, `z ` may be omitted. **Examples:**
+##### 6.B.I - Ratios: #####
+If the solute to solvent ratio is lower than 1, use `x to y Diluted z`. If it's higher than one, use `x to y Concentrated z`. In both cases, `x` and `y` are the ratio of solute to solvent, `z` the name of the 1:1 solution as described in **6.A**. If the solvent is water, `z ` may be omitted. **Examples:**
 - Mixing 1000mB of Sodium Carbonate Solution with 12000mB of water yields you `1 to 12 Diluted Sodium Carbonate Solution`
 - 1000mB of Ethene Solution(Dichloromethane) and 9000mB of Dichloromethane turn into: `1 to 9 Diluted Ethene Solution(Dichloromethane)`
 - 10000mB of Ammonia and 1000mB of Water turn into: `10 to 1 Concentrated Ammonia Solution`
 
 While non-integer numbers may be used, it is highly recommended to use integer ratios, and, if possible, normalize to a solute value of 1. (If not possible, try aiming for the lowest integer solute value instead.) Examples: `50 to 100` → `1 to 2`     |     `10 to 15` → `2 to 3`     |     `5 to 7` (cannot be converted to smaller numbers)
 
-##### 5.B.II - Percentages: #####
+##### 6.B.II - Percentages: #####
 If a ratio using low integer numbers cannot be achieved, you may use a percentage in the format of `x% y(z)` instead, where x is the solute percentage of the solution, y is the name of the solute, and z is the name of the solvent. `(z)`, similar to the above formats, may be omitted when the solvent is water. Decimal numbers are to be stated to no less than 3 significant figures if 3 or more are present. More are allowed, if not required. Repeating decimals are to be represented by the use of brackets. **Examples:**
 - `14% Potassium Carbonate Solution`
 - `37.462% Sodium Nitrate Solution(Ammonia)`
@@ -120,7 +128,7 @@ If a ratio using low integer numbers cannot be achieved, you may use a percentag
 
 <br/>
 
-#### 5.C - Mixtures: ####
+#### 6.C - Mixtures: ####
 For mixtures of fluids that are not necessarily solutions, use `x y to z w Mixture`, where x is the amount and y the name of the first constituent of the mixture, and z is the amount and w the name of the second constituent of the mixture. This may be extended ad infinitum with more constituents. The constituents must be sorted from highest fraction of total amount to lowest.
 **Examples:**
 - `5 Ethanol to 3 Water Mixture`
