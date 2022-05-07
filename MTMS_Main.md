@@ -4,7 +4,7 @@ A standard aiming at making modded Minecraft processing chains, in particularly 
 
 
 ![gliese_minecrafttechnicalmetricsystem](https://user-images.githubusercontent.com/55159077/167258398-5b4543ff-1e74-47ee-9a91-93b5f6d2cca8.png)
-## **The dark ages of modded Minecraft are about to end. The revolution is coming very soon.** ##
+# **The dark ages of modded Minecraft are about to end. The revolution is coming very soon.** #
 
 
 
