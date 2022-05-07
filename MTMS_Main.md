@@ -1,10 +1,10 @@
 ### Gliese 832 c's Minecraft Technical Metric System ###
-A standard aiming at making modded Minecraft processing chains, in particularly - but not limited to - tech mods/modpacks far more realistic and consistent. Version 1.0.0.
+A standard aiming at making modded Minecraft processing chains, in particularly - but not limited to - tech mods/modpacks far more realistic and consistent. Version 1.1.0.
 
 If you use this in your project, I would really appreciate it if you could link back to this exact page on your own main page or in any scripts or code classes that handle recipes using this system. While that is not required, it would greatly help the spread of this system.
 
 <br/><br/><br/><br/><br/>
-![gliese_minecrafttechnicalmetricsystem](https://user-images.githubusercontent.com/55159077/167258398-5b4543ff-1e74-47ee-9a91-93b5f6d2cca8.png)
+![gliese_minecrafttechnicalmetricsystem_v1 1 0](https://user-images.githubusercontent.com/55159077/167262669-04d1b82b-7603-4be9-9505-dc678b68952e.png)
 # **The dark ages of modded Minecraft are about to end. The revolution is coming very soon.** #
 
 <br/>
@@ -26,10 +26,11 @@ All amounts are relative to the count of a particles in a material (commonly kno
 
 <br/><br/>
 ## **2** - Materials follow the following ratios: ##
-**100 Mol __(IRL)__** :
+**1000 Mol __(IRL Unit)__** :
 **100 Liquid** : **1600 Gas** : **1 Item** : **400 Compressed Gas** :
 **100 Very Compressed Gas** : **100 Supercritical Fluid** : **50 Supercompressed Supercritical Fluid** : **25 Hypercompressed Supercritical Fluid**
 (The last two will rarely be encountered, but are still listed for completeness' sake.)
+*Note: 71 mols was chosen
 
 **For example:** Let's try to represent the following chemical equation: `HCl + H₂O → H₃0⁺•Cl⁻` Hydrogen chloride is a gas, whereas water is a liquid. Using the ratios above, the recipe would look like this in-game: `16mB Hydrogen Chloride + 1mB Water → 1mB Hydrochloric Acid`. Since `H₃0⁺•Cl⁻` is one seen as one single "unit"/molecule, it's represented as 1mB, *not* 2mB.
 
