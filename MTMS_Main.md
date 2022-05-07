@@ -57,7 +57,7 @@ While most of the time you are not going to go lower than flakes, specs and tiny
 *Note: I am aware that this makes the manual crafting of nuggets into ingots, ingots into blocks, etc. impossible. This is completely intended design as __MTMS__ is aiming to allow strong realism while maintaining high levels of internal consistency, the best results of which are achieved with ratios such as above, and it's not very realistic to just stick chunks of things like metal together to make bigger ones anyways. The intended path of action is for project authors to add recipes to various metal melting and casting machines to turn the smaller units into the bigger ones. If you do not like this system, feel free to create your own "fork" of __MTMS__ to deal with such things. I recommend going with a value that is far better to do math with in a decimal system instead of the default 9. The only good ones that fit into the 3x3 crafting grid are 5 and 4. Alternatively, perhaps add/use a mod that adds a 5x5 crafting table.*
 
 ## **4** - Naming: ##
-The names of materials shall use either IUPAC's naming convention, or any commonly used name for the compound in question. If neither exists, it is permissible to create your own name. If possible, it should follow IUPAC convention as closely as possible. **Examples:**
+The names of materials shall use either IUPAC's naming convention, or any commonly used name for the compound in question. If neither exists, it is permissible to create your own name. If possible, it should resemble IUPAC convention as closely as possible. **Examples:**
 - `Dihydrogen Monoxide` → `Water`
 - `1 to 16 Diluted Acetic Acid` → `Vinegar`
 - `7 Nitric Acid to 1 Nitrogen Dioxide Mixture` → `Red Fuming Nitric Acid`
