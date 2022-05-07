@@ -74,7 +74,7 @@ There is one exception to the above and that is if the solution is an acid. In t
 - `Perchloric Acid`
 - `Nitrous Acid`
 
-
+<br/>
 #### 5.B - Diluted and Concentrated Solutions: ####
 Sometimes you want to use more diluted or concentrated solutions such as diluted acids for certain processes. In the following table, `x` is the name of the 1:1 solution as described in **5.A** and the value at the left side of the table is the solute to solvent ratio:
 
@@ -109,6 +109,7 @@ If the solute to solvent ratio is lower than 1, use `x to y Diluted z`. If it's 
 
 While non-integer numbers may be used, it is highly recommended to use integer ratios, and, if possible, normalize to a solute value of 1. (If not possible, try aiming for the lowest integer solute value instead.) Examples: `50 to 100` → `1 to 2`     |     `10 to 15` → `2 to 3`     |     `5 to 7` (cannot be converted to smaller numbers)
 
+<br/>
 ##### 5.B.II - Percentages: #####
 If a ratio using low integer numbers cannot be achieved, you may use a percentage in the format of `x% y(z)` instead, where x is the percentage of the solute compared to the solvent, y is the name of the solute, and z is the name of the solvent. `(z)`, similar to the above formats, may be omitted when the solvent is water. Decimal numbers are to be stated to no less than 3 significant figures if 3 or more are present. More are allowed, if not required. Repeating decimals are to be represented by the use of brackets.
 **Examples:**
@@ -116,7 +117,7 @@ If a ratio using low integer numbers cannot be achieved, you may use a percentag
 - `37.462% Sodium Nitrate Solution(Ammonia)`
 - `33.[3]% Iodine Solution(Ethanol)`
 
-
+<br/>
 #### 5.C - Mixtures: ####
 For mixtures of fluids that are not necessarily solutions, use `x y to z w Mixture`, where x is the amount and y the name of the first constituent of the mixture, and z is the amount and w the name of the second constituent of the mixture. This may be extended ad infinitum with more constituents. The constituents must be sorted from highest fraction of total amount to lowest.
 **Examples:**
