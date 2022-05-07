@@ -1,10 +1,10 @@
-###### Gliese 832 c's Minecraft Technical Metric System ######
+# Gliese 832 c's Minecraft Technical Metric System #
 A standard aiming at making modded Minecraft processing chains, in particularly - but not limited to - tech mods/modpacks far more realistic and consistent. Version 1.0.0.
 
 
 
 ![gliese_minecrafttechnicalmetricsystem](https://user-images.githubusercontent.com/55159077/167258398-5b4543ff-1e74-47ee-9a91-93b5f6d2cca8.png)
-## **The dark ages of modded Minecraft are about to end. The revolution is coming very soon.** ##
+##### **The dark ages of modded Minecraft are about to end. The revolution is coming very soon.** #####
 
 
 
@@ -22,12 +22,14 @@ Oftentimes amounts of things like chemicals and metals are all over the place, a
 
 
 
-### **1.** Amount based in-game amounts: ###
+#### **1.** Amount based in-game amounts: ####
 All amounts are relative to the count of a particles in a material (commonly known as mol). For example, 1000mB of hydrogen gas and 1000mB of oxygen gas represent the same amount of molecules of these two materials. Volume and weight, as well as thermal expansion are ignored for the sake of simplicity as it would turn everything into a mess.
 
 
 
-### **2.** Materials follow the following ratios: ###
+
+
+#### **2.** Materials follow the following ratios: ####
 **100 Mol __(IRL)__** : **100 Liquid** : **1600 Gas** : **1 Item** : **400 Compressed Gas** : **100 Very Compressed Gas** : **100 Supercritical Fluid** : **50 Supercompressed Supercritical Fluid** : **25 Hypercompressed Supercritical Fluid**
 (The last two will rarely be encountered, but are still listed for completeness' sake.)
 
@@ -41,7 +43,9 @@ Lastly, let's use some of the less common material types and unconventional mate
 
 
 
-### **3.** Item material splitting: ###
+
+
+#### **3.** Item material splitting: ####
 Sometimes you might want to use only tiny amounts of materials. While you can just use low amounts of millibuckets with fluids, that is not possible with items. So the following system has been devised for splitting items:
 
 This:    | Equals to That:
@@ -58,7 +62,9 @@ While most of the time you are not going to go lower than flakes, specs and tiny
 
 
 
-### **4.** Solutions and other compound mixtures: ###
+
+
+#### **4.** Solutions and other compound mixtures: ####
 To avoid a messy system of solubility, solutions are always treated as one part solute and one part solvent.
 For example: `1 Sodium Chloride Dust + 100mB Water → 100mB Sodium Chloride Solution`
 
@@ -67,9 +73,11 @@ Example: `1 Iron Oxide Dust + 100mB Water → 200mB Iron Oxide Suspension`
 
 
 
-### **5.** Name standardization: ###
 
-## Solutions ##:
+
+#### **5.** Name standardization: ####
+
+##### Solutions: #####
 Solutions follow the format of `x z Solution(y)`, where x is the name of the solute, y is the name of the solvent, and z is the state of matter of the solution. When the solvent is water, `(y)`may be omitted. When the state of matter of the solution is liquid, `z ` may be omitted.
 Examples: `Sodium Chloride Solution`     |     `Iodine Solution(Carbon Tetrachloride)`     |     `Germanium Solid Solution(Silicon)`
 *Note: In real life, both solid and gaseous solutions are not called that way and instead have different names. This name convention is only supposed to be used when another name for a solid or gaseous solution does not exist. In fact, these cases are so rare that I had trouble finding one for an example, so I used something that's actually usually known as Silicon-Germanium Alloy.*
@@ -78,7 +86,7 @@ There is one exception to the above and that is if the solution is an acid. In t
 Examples: `Propanoic Acid`     |     `Perchloric Acid`     |     `Nitrous Acid`
 
 
-## Diluted Solutions ##:
+##### Diluted Solutions: #####
 Sometimes you want to use more diluted solutions such as diluted acids for certain processes. In the following table, `x` is the name of the most concentrated solution as described in the preceding paragraph and the value at the left is the solute to solvent ratio:
 
 Ratio | Name
@@ -96,15 +104,15 @@ I.e.: `1000mB Sulfuric Acid + 7000mB Water → 8000mB Extremely Diluted Sulfuric
 While it does not have to be called that way directly, if referring to solutions with 1:1 ratios in descriptions and tutorials and such, the word undiluted may be used.
 
 For all other dilution levels, you may use either of the following systems:
-# A - Ratios: #
+###### A - Ratios: ######
 `x to y Diluted z`, where `x` and `y` are the ratio of solute to solvent, `z` the name of the most concentrated solution of the solute. If the solvent is water, `z ` may be omitted. For example: Mixing 1000mB of sodium carbonate solution with 12000mB of water yields you `1 to 12 Diluted Sodium Carbonate Solution`.
 Another example: 1000mB of Ethene Solution(Dichloromethane) and 9000mB of Dichloromethane turn into: `1 to 9 Diluted Ethene Solution(Dichloromethane)`
 While non-integer numbers may be used, it is highly recommended to use integer ratios, and, if possible, normalize to a solute value of 1. (If not possible, try aiming for the lowest integer solute value instead.) Examples: `50 to 100` → `1 to 2`     |     `10 to 15` → `2 to 3`     |     `5 to 7` (cannot be converted to smaller numbers)
 
-# B - Percentages: #
+###### B - Percentages: ######
 If a ratio using low integer numbers cannot be achieved, you may use a percentage in the format of `x% y(z)` instead, where x is the percentage of the solute compared to the solvent, y is the name of the solute, and z is the name of the solvent. `(z)`, similar to the above formats, may be omitted when the solvent is water. Decimal numbers are to be stated to no less than 3 significant figures if 3 or more are present. More are allowed, if not required. Repeating decimals are to be represented by the use of brackets.
 Examples: `14% Potassium Carbonate Solution`     |     `37.462% Sodium Nitrate Solution(Ammonia)`     |     `33.[3]% Iodine Solution(Ethanol)`
 
 
-## Mixtures ##:
+##### Mixtures: #####
 For mixtures of fluids that are not necessarily solutions, use `x y to z w Mixture`, where x is the amount and y the name of the first constituent of the mixture, and z is the amount and w the name of the second constituent of the mixture. This may be extended ad infinitum with more constituents. The constituents must be sorted from highest fraction of total amount to lowest. Examples: `5 Ethanol to 3 Water Mixture`     |     `6 Ammonia to 4 Water to 2 Hydrogen Peroxide to 1 Mineral Oil Mixture`
