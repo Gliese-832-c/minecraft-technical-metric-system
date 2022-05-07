@@ -76,7 +76,7 @@ There is one exception to the above and that is if the solution is an acid. In t
 
 
 #### 5.B - Diluted and Concentrated Solutions: ####
-Sometimes you want to use more diluted solutions such as diluted acids for certain processes. In the following table, `x` is the name of the most concentrated solution as described in the preceding paragraph and the value at the left is the solute to solvent ratio:
+Sometimes you want to use more diluted or concentrated solutions such as diluted acids for certain processes. In the following table, `x` is the name of the 1:1 solution as described in **5.A** and the value at the left side of the table is the solute to solvent ratio:
 
 Ratio | Name
 ----- | ---------------------
@@ -88,27 +88,37 @@ Ratio | Name
 3:1   | Somewhat Concentrated x
 2:1   | Lightly Concentrated x
 1:1   | x
-1:2   | Lightly Concentrated x
-1:3   | Somewhat Concentrated x
+1:2   | Lightly Diluted x
+1:3   | Somewhat Diluted x
 1:4   | Diluted x
-1:5   | Moderately Concentrated x
-1:6   | Strongly Concentrated x
-1:7   | Highly Concentrated x
-1:8   | Extremely Concentrated x
+1:5   | Moderately Diluted x
+1:6   | Strongly Diluted x
+1:7   | Highly Diluted x
+1:8   | Extremely Diluted x
 
-I.e.: `1000mB Sulfuric Acid + 7000mB Water → 8000mB Extremely Diluted Sulfuric Acid`
+**I.e.:** `1000mB Sulfuric Acid + 7000mB Water → 8000mB Extremely Diluted Sulfuric Acid`
 While it does not have to be called that way directly, if referring to solutions with 1:1 ratios in descriptions and tutorials and such, the word undiluted may be used.
 
 For all other dilution levels, you may use either of the following systems:
 ##### 5.B.I - Ratios: #####
-`x to y Diluted z`, where `x` and `y` are the ratio of solute to solvent, `z` the name of the most concentrated solution of the solute. If the solvent is water, `z ` may be omitted. For example: Mixing 1000mB of sodium carbonate solution with 12000mB of water yields you `1 to 12 Diluted Sodium Carbonate Solution`.
-Another example: 1000mB of Ethene Solution(Dichloromethane) and 9000mB of Dichloromethane turn into: `1 to 9 Diluted Ethene Solution(Dichloromethane)`
+If the solute to solvent ratio is lower than 1, use `x to y Diluted z`. If it's higher than one, use `x to y Concentrated z`. In both cases, `x` and `y` are the ratio of solute to solvent, `z` the name of the 1:1 solution as described in **5.A**. If the solvent is water, `z ` may be omitted.
+**Examples:**
+- Mixing 1000mB of Sodium Carbonate Solution with 12000mB of water yields you `1 to 12 Diluted Sodium Carbonate Solution`
+- 1000mB of Ethene Solution(Dichloromethane) and 9000mB of Dichloromethane turn into: `1 to 9 Diluted Ethene Solution(Dichloromethane)`
+- 10000mB of Ammonia and 1000mB of Water turn into: `10 to 1 Concentrated Ammonia Solution`
+
 While non-integer numbers may be used, it is highly recommended to use integer ratios, and, if possible, normalize to a solute value of 1. (If not possible, try aiming for the lowest integer solute value instead.) Examples: `50 to 100` → `1 to 2`     |     `10 to 15` → `2 to 3`     |     `5 to 7` (cannot be converted to smaller numbers)
 
 ##### 5.B.II - Percentages: #####
 If a ratio using low integer numbers cannot be achieved, you may use a percentage in the format of `x% y(z)` instead, where x is the percentage of the solute compared to the solvent, y is the name of the solute, and z is the name of the solvent. `(z)`, similar to the above formats, may be omitted when the solvent is water. Decimal numbers are to be stated to no less than 3 significant figures if 3 or more are present. More are allowed, if not required. Repeating decimals are to be represented by the use of brackets.
-Examples: `14% Potassium Carbonate Solution`     |     `37.462% Sodium Nitrate Solution(Ammonia)`     |     `33.[3]% Iodine Solution(Ethanol)`
+**Examples:**
+- `14% Potassium Carbonate Solution`
+- `37.462% Sodium Nitrate Solution(Ammonia)`
+- `33.[3]% Iodine Solution(Ethanol)`
 
 
 #### 5.C - Mixtures: ####
-For mixtures of fluids that are not necessarily solutions, use `x y to z w Mixture`, where x is the amount and y the name of the first constituent of the mixture, and z is the amount and w the name of the second constituent of the mixture. This may be extended ad infinitum with more constituents. The constituents must be sorted from highest fraction of total amount to lowest. Examples: `5 Ethanol to 3 Water Mixture`     |     `6 Ammonia to 4 Water to 2 Hydrogen Peroxide to 1 Mineral Oil Mixture`
+For mixtures of fluids that are not necessarily solutions, use `x y to z w Mixture`, where x is the amount and y the name of the first constituent of the mixture, and z is the amount and w the name of the second constituent of the mixture. This may be extended ad infinitum with more constituents. The constituents must be sorted from highest fraction of total amount to lowest.
+**Examples:**
+- `5 Ethanol to 3 Water Mixture`
+- `6 Ammonia to 4 Water to 2 Hydrogen Peroxide to 1 Mineral Oil Mixture`
