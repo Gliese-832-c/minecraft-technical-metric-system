@@ -30,7 +30,7 @@ All amounts are relative to the count of a particles in a material (commonly kno
 **100 Liquid** : **1600 Gas** : **1 Item** : **400 Compressed Gas** :
 **100 Very Compressed Gas** : **100 Supercritical Fluid** : **50 Supercompressed Supercritical Fluid** : **25 Hypercompressed Supercritical Fluid**
 (The last two will rarely be encountered, but are still listed for completeness' sake.)
-*Note: 71 mols was chosen
+*Note: 1000 mols was chosen as the number to represent 1 item, as it feels like a good value to emulate real life materials. For example, 1000 mols of iron would be 55.845kg, which seems like a decent value to represent one ingot. That much iron would be 7.092 liters.
 
 **For example:** Let's try to represent the following chemical equation: `HCl + H₂O → H₃0⁺•Cl⁻` Hydrogen chloride is a gas, whereas water is a liquid. Using the ratios above, the recipe would look like this in-game: `0.16mB Hydrogen Chloride + 0.1mB Water → 0.1mB Hydrochloric Acid`. Since `H₃0⁺•Cl⁻` is one seen as one single "unit"/molecule, it's represented as 0.1mB, *not* 0.2mB. More on that in paragraph **4**.
 
