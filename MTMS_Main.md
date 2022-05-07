@@ -1,5 +1,5 @@
 ### Gliese 832 c's Minecraft Technical Metric System ###
-A standard aiming at making modded Minecraft processing chains, in particularly - but not limited to - tech mods/modpacks far more realistic and consistent. Version 1.1.0.
+A standard aiming at making modded Minecraft processing chains, in particularly - but not limited to - tech mods/modpacks far more realistic and consistent. Version 1.2.0.
 
 If you use this in your project, I would really appreciate it if you could link back to this exact page on your own main page or in any scripts or code classes that handle recipes using this system. While that is not required, it would greatly help the spread of this system.
 
